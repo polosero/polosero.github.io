@@ -1,0 +1,47 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column
+}
+
+
+header {
+    height: 10vh;
+}
+header > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+nav > a {
+    padding: 0.5rem 1rem;
+}
+
+
+main {
+    width: 50rem;
+    max-width: 100%;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+    align-self: center;
+    flex: 1;
+}
+
+
+footer {
+    position: sticky;
+    top: 100%;
+    padding: 0.2em 0.5em;
+    text-align: center;
+}
