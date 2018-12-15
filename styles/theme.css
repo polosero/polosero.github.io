@@ -1,5 +1,6 @@
 html {
-    background-color: gray;
+    background-color: black;
+    color: white;
     font-family: sans-serif;
 }
 
@@ -20,15 +21,16 @@ nav > a:hover {
 }
 nav > a.selected {
     text-decoration: none;
-    background-color: white;
-    color: black;
+    /*background-color: white;*/
+    /*color: black;*/
+    color: red;
 }
 
 main {
-    background-color: silver;
+    background-color: black;
 }
 
-footer {
+/*footer {
     background-color: black;
     color: white;
-}
+}*/
