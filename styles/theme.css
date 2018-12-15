@@ -30,7 +30,18 @@ main {
     background-color: black;
 }
 
-/*footer {
+footer {
     background-color: black;
-    color: white;
-}*/
+}
+
+
+html {
+    background-attachment: fixed;
+    background-image:
+        repeating-radial-gradient(
+            #222,
+            #000 1px,
+            transparent 3px
+        );
+    background-size: 70px 70px;
+}

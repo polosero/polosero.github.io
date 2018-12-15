@@ -41,6 +41,7 @@ nav > a:first-child {
 nav > a:first-child > img {
     width: 2em;
     height: 2em;
+    margin-left: 0.5em;
 }
 
 
