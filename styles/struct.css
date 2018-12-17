@@ -34,14 +34,6 @@ nav > a {
 }
 nav > a:first-child {
     margin-right: auto;
-    padding: 0;
-    width: 2em;
-    height: 2em;
-}
-nav > a:first-child > img {
-    width: 2em;
-    height: 2em;
-    margin-left: 0.5em;
 }
 
 
