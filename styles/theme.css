@@ -8,7 +8,7 @@ html {
 nav {
     background-color: black;
 }
-nav > a {
+nav > a, .menu-item {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -48,3 +48,11 @@ html {
         );
     background-size: 70px 70px;
 }
+
+a {
+    color: white;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.1rem; }
