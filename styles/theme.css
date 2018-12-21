@@ -1,6 +1,6 @@
 html {
     background-color: black;
-    color: white;
+    color: #eee;
     font-family: sans-serif;
 }
 
@@ -35,6 +35,7 @@ main {
 
 footer {
     background-color: black;
+    color: #ccc;
 }
 
 
