@@ -54,6 +54,22 @@ a {
     color: white;
 }
 
-h1 { font-size: 2rem; }
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.1rem; }
+
+
+.contacts {
+    text-align: center;
+}
+dl.contacts > dt {
+    font-variant: small-caps;
+    font-size: 1.1em;
+    margin-top: 0.5em;
+}
+dl.contacts > dd {
+    margin: 0;
+}
