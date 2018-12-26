@@ -12,6 +12,7 @@ body {
 
 
 header {
+    position: relative;
     height: 15vh;
 }
 header > img {
@@ -19,6 +20,16 @@ header > img {
     top: 0;
     position: fixed;
     z-index: -1
+}
+header > .credit {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+header > .credit a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.8rem;
 }
 
 
@@ -56,4 +67,7 @@ footer {
 
 img {
     max-width: 100%;
+}
+.mv-up-10 {
+    margin-top: -10vw;
 }
