@@ -77,3 +77,16 @@ dl.contacts > dt {
 dl.contacts > dd {
     margin: 0;
 }
+
+.meta-info {
+    font-size: 0.9rem;
+    color: gray;
+    text-align: right;
+}
+
+article p {
+  margin: 0.2rem 0;
+}
+article p:first-letter {
+  padding-left: 1rem;
+}
