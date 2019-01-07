@@ -69,14 +69,26 @@ h3 { font-size: 1.1rem; }
 .contacts {
     text-align: center;
 }
+dl.contacts > dt:first-child {
+    margin-top: 0;
+}
 dl.contacts > dt {
-    font-variant: small-caps;
-    font-size: 1.1em;
-    margin-top: 0.5em;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 2rem 0 0.4rem;
 }
 dl.contacts > dd {
     margin: 0;
 }
+dl.contacts > dt.orgs {
+    margin-bottom: 0.4rem;
+}
+dl.contacts > dt.orgs ~ dd > p {
+    margin: 0 0 0.4rem;
+    color: gray;
+    font-size: 0.9rem;
+}
+
 
 .meta-info {
     font-size: 0.9rem;
