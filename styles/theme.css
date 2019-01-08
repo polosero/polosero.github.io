@@ -95,6 +95,9 @@ dl.contacts > dt.orgs ~ dd > p {
     color: gray;
     text-align: right;
 }
+time.meta-info {
+    float: right;
+}
 
 article p {
   margin: 0.2rem 0;
