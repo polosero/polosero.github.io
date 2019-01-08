@@ -5,6 +5,12 @@ html {
 }
 
 
+/*body > nav {
+    background-image: url('/img/logo-transparent-small.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 4.5rem;
+}*/
 nav {
     background-color: black;
 }
@@ -23,11 +29,18 @@ nav > a.selected {
     text-decoration: none;
     color: red;
 }
-nav > a:first-child {
+/*nav > a:first-child {
     text-transform: none;
     font-variant: small-caps;
     font-size: 1.1rem;
 }
+nav > a:first-child::before {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: auto;
+    background-color: green;
+}*/
 
 main {
     background-color: black;

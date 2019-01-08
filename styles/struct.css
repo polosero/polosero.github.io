@@ -45,6 +45,13 @@ nav > a {
 }
 nav > a:first-child {
     margin-right: auto;
+    height: 2rem;
+    padding: 0;
+}
+nav > a:first-child > img {
+    height: 5rem;
+    width: auto;
+    margin-top: -1rem;
 }
 
 
@@ -73,6 +80,10 @@ img {
 }
 .back-link {
     float: left;
+}
+.icon {
+    width: 1em;
+    height: 1em;
 }
 
 
