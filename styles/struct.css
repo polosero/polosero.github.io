@@ -38,7 +38,7 @@ nav {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    padding: 1rem 0 2rem;
+    padding: 1rem 3vw 2rem;
 }
 nav > a {
     padding: 0.5em 1em;

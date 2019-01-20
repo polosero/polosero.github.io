@@ -5,12 +5,6 @@ html {
 }
 
 
-/*body > nav {
-    background-image: url('/img/logo-transparent-small.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-left: 4.5rem;
-}*/
 nav {
     background-color: black;
 }
@@ -29,18 +23,7 @@ nav > a.selected {
     text-decoration: none;
     color: red;
 }
-/*nav > a:first-child {
-    text-transform: none;
-    font-variant: small-caps;
-    font-size: 1.1rem;
-}
-nav > a:first-child::before {
-    content: " ";
-    display: block;
-    height: 100%;
-    width: auto;
-    background-color: green;
-}*/
+
 
 main {
     background-color: black;
@@ -117,4 +100,22 @@ article p {
 }
 article p:first-letter {
   padding-left: 1rem;
+}
+
+
+input, button {
+  color: #eee;
+  background-color: black;
+  border-width: 0;
+  border-bottom: 1px solid #eee;
+}
+button {
+  border-width: 2px;
+}
+button:hover {
+  background-color: #222;
+}
+input:focus {
+  color: white;
+  box-shadow: 0 2px #eee;
 }
