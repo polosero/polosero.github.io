@@ -96,26 +96,28 @@ time.meta-info {
 }
 
 article p {
-  margin: 0.2rem 0;
+    margin: 0.2rem 0;
 }
 article p:first-letter {
-  padding-left: 1rem;
+    padding-left: 1rem;
 }
 
 
+label, input, button {
+    background-color: black;
+    color: #eee;
+}
 input, button {
-  color: #eee;
-  background-color: black;
-  border-width: 0;
-  border-bottom: 1px solid #eee;
+    border-width: 0;
+    border-bottom: 1px solid #eee;
 }
 button {
-  border-width: 2px;
+    border-width: 2px;
 }
 button:hover {
-  background-color: #222;
+    background-color: #222;
 }
 input:focus {
-  color: white;
-  box-shadow: 0 2px #eee;
+    color: white;
+    box-shadow: 0 2px #eee;
 }
