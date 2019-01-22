@@ -106,9 +106,14 @@ article p:first-letter {
 }
 
 
-label, input, button {
+input, button {
     background-color: black;
     color: #eee;
+}
+label {
+    font-size: 0.9rem;
+    background-color: black;
+    color: #ddd;
 }
 input, button {
     border-width: 0;
@@ -123,4 +128,11 @@ button:hover {
 input:focus {
     color: white;
     box-shadow: 0 2px #eee;
+}
+input:disabled {
+    border-color: black
+}
+fieldset {
+    background-color: black;
+    border: 1px solid dimgray;
 }
