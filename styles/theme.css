@@ -106,18 +106,16 @@ article p:first-letter {
 }
 
 
-input, button {
+input, button, select {
     background-color: black;
     color: #eee;
+    border-width: 0;
+    border-bottom: 1px solid #eee;
 }
 label {
     font-size: 0.9rem;
     background-color: black;
     color: #ddd;
-}
-input, button {
-    border-width: 0;
-    border-bottom: 1px solid #eee;
 }
 button {
     border-width: 2px;
@@ -129,8 +127,13 @@ input:focus {
     color: white;
     box-shadow: 0 2px #eee;
 }
-input:disabled {
+input:disabled, select:disabled {
     border-color: black
+}
+select:disabled {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
 }
 fieldset {
     background-color: black;
