@@ -119,6 +119,12 @@ label {
 }
 button {
     border-width: 2px;
+    display: flex;
+    flex-direction: column;
+}
+button > span {
+    font-size: 0.8em;
+    color: gray;
 }
 button:hover {
     background-color: #222;
@@ -131,7 +137,7 @@ input:disabled, select:disabled {
     border-color: black
 }
 select:disabled {
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
