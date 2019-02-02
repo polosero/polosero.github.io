@@ -119,7 +119,7 @@ label {
 }
 button {
     border-width: 2px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
 }
 button > span {
