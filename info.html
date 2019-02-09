@@ -12,8 +12,31 @@
             <meta property="og:url" content="https://polo-sero.cz/info.html" />
             <meta property="og:image" content="https://polo-sero.cz/img/logo.jpg" />
             <meta property="og:description" content="Registrace se již blíží a proto bychom vás rádi o akci blíže informovali." />
+            <style media="screen">
+              main > nav { justify-content: flex-start; }
+              main > nav > label { padding: 0.2rem 0.5rem; font-weight: bold; cursor: pointer; }
+              main > section > article { margin-top: 1rem; }
+              main > #general:not(:checked) ~ .general,
+              main > #polosero:not(:checked) ~ .polosero,
+              main > #super:not(:checked) ~ .super,
+              main > #wolf:not(:checked) ~ .wolf,
+              main > #hunter:not(:checked) ~ .hunter,
+              main > #vamp:not(:checked) ~ .vamp,
+              main > input[type=radio] { display: none; }
+              main > #general:checked ~ nav > [for=general],
+              main > #polosero:checked ~ nav > [for=polosero],
+              main > #super:checked ~ nav > [for=super],
+              main > #wolf:checked ~ nav > [for=wolf],
+              main > #hunter:checked ~ nav > [for=hunter],
+              main > #vamp:checked ~ nav > [for=vamp]
+              { color: red; }
+              main > section { margin-top: 0 !important; }
+              main > nav { padding: 0; }
+            </style>
     </head>
     <body>
+        <label for="menu-burger"> menu </label>
+        <input id="menu-burger" type="checkbox" />
         <nav>
             <a href="/" class="">
               <img src="/img/logo-white-red.png" alt="">
@@ -22,8 +45,8 @@
             <a href="/info.html" class="selected">Info</a>
             <a href="/blog/" class="">Blog</a>
             <!-- <a href="/info.html" class="selected">Info</a>
-            <a href="/lore/" class="">Lore</a>
-            <a href="/reg.html" class="">Registrace</a> -->
+            <a href="/lore/" class="">Lore</a> -->
+            <a href="/reg.html" class="">Registrace</a>
             <a href="/contact.html" class="">Kontakt</a>
         </nav>
         <header>
@@ -36,52 +59,203 @@
                   </div>
         </header>
         <main>
-              <h1> Info </h1>
-            
-            <p>
-            Registrace se již blíží a proto bychom vás rádi o akci blíže informovali.
-            </p>
-            
-            <p>
-            Pološero se bude konat v městských částech Olomouce, v nočních hodinách.
-            </p>
-            
-            <p>
-            Nocleh si každý může zařídit po vlastní ose, ale pro zájemce budou prostory
-            pro přespání nachystány na skautské klubovně u Baumaxu (Holická 1099/31,
-            Hodolany, 779 00 Olomouc).
-            </p>
-            
-            <p>
-            Pološero: Poslední kapitola je situována do doby přibližně dvacet let před
-            prvním ročníkem Pološero: Hodina zapomnění (2016). Doba, ve které se budeme
-            pohybovat na letošním ročníku, je anachronická. Čili ač se jedná z našeho
-            pohledu o minulost, můžete v něm najít například technologické vymoženosti
-            dnešního světa. Pro lepší představu o atmosféře ve světě Pološera dále čtěte
-            naše příspěvky na blogu
-            <a href="/blog/">polo-sero.cz/blog/</a>.
-            </p>
-            
-            <p>
-            Od hráčů na akci očekáváme využívání mobilních telefonů. Budete s ním moci
-            pracovat přímo ve hře a proto pro vás bude esenciální. Mobil je nutností,
-            výhodou pro vás bude smartphone s připojením k internetu. Na důležitých
-            místech bude k dispozici Wi-Fi.
-            </p>
-            
-            <p>
-            Registrace bude spuštěna v prvním únorovém týdnu a proto buďte ve střehu!
-            Na našich stránkách také již brzy bude k nalezení registrační formulář a
-            informace, které k registraci budete potřebovat. Budeme vás také dále
-            informovat jak na sociálních sítích (Facebook a Instagram), tak na webu!
-            </p>
+            <input id="general" type="radio" name="info-nav" checked />
+            <input id="polosero" type="radio" name="info-nav" />
+            <input id="super" type="radio" name="info-nav" />
+            <input id="wolf" type="radio" name="info-nav" />
+            <input id="hunter" type="radio" name="info-nav" />
+            <input id="vamp" type="radio" name="info-nav" />
+            <nav>
+              <label for="general"> Obecné </label>
+              <label for="polosero"> Pološero </label>
+              <!-- <label for="super"> Supernaturálové </label> -->
+              <label for="wolf"> Vlkodlaci </label>
+              <label for="hunter"> Lovci </label>
+              <label for="vamp"> Upíři </label>
+            </nav>
             
             
-            <p>
-            Těšíme se na vás, <br>
-            Váš tým Pološero!
-            </p>
+            <section class="general">
+              <article class="quote">
+                <p>
+                  “No píše se to tady černé na bílém!” rozhořčoval se bledý chlapík v buřince a tvídovém sáčku, které na první pohled zažilo lepší léta. Mnohem elegantněji oděná žena se mu naklonila přes rameno a přelétla pohledem ranní vydání místního plátku, do kterého civěl chlapík. “To může být cokoliv. Není tam nic jasně řečeno,” chladným tónem počastovala svého společníka. “Hele Bětko, já ti povídám, že se tam dostal další. Další ňouma narazil na díru a prostě tam spad. Poslouchej,” začal citovat z článku. “Šel jsem jen tak po ulici a najednou noc. Ulice v mlze, i když bylo deset hodin ráno. Ušel jsem dva kroky a najednou se ocitl na Žižkáči. Kolem mě se furt točila nějaká světýlka. Za mnou se objevil muž obklopený jakousi aurou a zařval na mě, tak jsem začal utíkat.” Buřinka se otočila na dámu. “To je jasný Pološero! A prý ho našli, jak se někde krčí na dvorku v Bruntále. Ale poslouchej, to je už pátej, co se tam jen tak dostal. S tím se musí něco dělat. Za chvilku se tam můžou začít vydávat v houfech. Co ty víš co tam najdou.” Dáma si s hlubokým zamyšlením promnula špičáky a s kapkou nechutě pohlédla na Buřinku. “A co bychom s tím měli dělat? Pěkně lidi poprosit, aby radši nikam nechodili? Takové trhliny se mohou objevit kdekoliv. To nejde předvídat.”
+                </p>
+                <p>
+                  Buřinkovi zasvítili malá očka, jakoby přesně na tuhle otázku čekal celou dobu. “Hele, tos neslyšela? Šeptá se o tom ve všech komunitách. Prý, že mají řešení, víš? Ti nahoře. Vysílají do všech koutů světa posly, aby o tom rozšířili povědomí. A dokonce sem slyšel, že nejenom naši, prý i vlkouši a mutanti. Velkej projekt, sem slyšel. Sem do Olomouce taky.”
+                </p>
+                <p>
+                  To byla pro ní zcela nová informace a vůbec se jí to nezamlouvalo. “Nevěřím ničemu, co páchne po zvěřině nebo chemii. Jen aby to nebyl nějaký podvrh. Nějaký nekalý plán z jejich strany.” pochybovačně pohlížela na Buřinku. Ten ale nedbale mávl rukou. “Naopak, když se už zapojují všechny strany, musí to stát za to. Průšvih je to velkej, tak bych taky čekal velkou odezvu. Hele, půjdem se tam mrknout ne? Na ten velkej tyjátr. Za šest týdnů. Stejně budem ve městě, tak co. Nic nám neudělá se tam podívat a poslechnout si ten velkej plán. Co ty na to?”
+                </p>
+              </article>
+              <h1> Registrace je nyní spuštěna! </h1>
+              <p>
+                Více informací si můžete přečíst v přiloženém pdf souboru.
+                <a href="/docs/PLSR19_informace.pdf" target="_blank"> PLSR19_informace.pdf </a>
+              </p>
+              <hr>
+              <time class="meta-info" datetime="2019-01-24">24. 1. 2019</time><br>
+              <p>
+              Pološero se bude konat v městských částech Olomouce, v nočních hodinách.
+              </p>
+              <p>
+              Nocleh si každý může zařídit po vlastní ose, ale pro zájemce budou prostory
+              pro přespání nachystány na skautské klubovně u Baumaxu (Holická 1099/31,
+              Hodolany, 779 00 Olomouc).
+              </p>
+              <p>
+              Pološero: Poslední kapitola je situována do doby přibližně dvacet let před
+              prvním ročníkem Pološero: Hodina zapomnění (2016). Doba, ve které se budeme
+              pohybovat na letošním ročníku, je anachronická. Čili ač se jedná z našeho
+              pohledu o minulost, můžete v něm najít například technologické vymoženosti
+              dnešního světa. Pro lepší představu o atmosféře ve světě Pološera dále čtěte
+              naše příspěvky na blogu
+              <a href="/blog/">polo-sero.cz/blog/</a>.
+              </p>
+              <p>
+              Od hráčů na akci očekáváme využívání mobilních telefonů. Budete s ním moci
+              pracovat přímo ve hře a proto pro vás bude esenciální. Mobil je nutností,
+              výhodou pro vás bude smartphone s připojením k internetu. Na důležitých
+              místech bude k dispozici Wi-Fi.
+              </p>
+              <p>
+              Registrace bude spuštěna v prvním únorovém týdnu a proto buďte ve střehu!
+              Na našich stránkách také již brzy bude k nalezení registrační formulář a
+              informace, které k registraci budete potřebovat. Budeme vás také dále
+              informovat jak na sociálních sítích (Facebook a Instagram), tak na webu!
+              </p>
+              <p>
+              Těšíme se na vás, <br>
+              Váš tým Pološero!
+              </p>
+              <hr>
+              <p>
+                <a href="/docs/gdpr.pdf" target="_blank"> Informace o zpracování osobních údajů </a>
+              </p>
+            </section>
             
+            
+            <section class="polosero">
+              <h1> Pološero </h1>
+              <p>
+              Pološero je rovina zrcadlová k té naší. Ne však zcela. Jde o jakousi přestupní stanici, bránu do dalších dimenzí a mnohem více. Věci se v ní zdají podobné těm skutečným, ale panuje v něm věčná noc. Ne však ta hluboká temná, kterou známe, ale nejasná, jako by se nemohla rozhodnout, jestli nocí je a nebo ne. Tajemné šero zde zakrývá tvary a vzdálenosti hmotného světa. V něm však také jasněji září duše zemřelých i těch, kteří se sem dostali tajemnější cestou. Jsou zde také tvorové kteří žijí jen zde, ne však ještěři, ani hmyz skrývající se pod kameny, ale drobná světýlka a hluboké stíny, které mohou být dobrými průvodci na cestě, ale i zrádnými pastmi, které vás odsud již nepustí.
+              </p>
+              <p>
+              Někteří studenti tajemných umění se domnívají, že pološero stejně jako další roviny bytí jsou stejně hmotné, jako vy a já. Jsou jen daleko v temných hlubinách kosmu, tak daleko, že je smrtelník nikdy nespatří, dokud se neodprostí od své hmotné schránky. A jen ten nejzběhlejší a nejmocnější čaroděj si proklestí cestu do jádra vesmíru odkud všechna magie proudí a kam se vrací.
+              Každý supernaturál do jisté míry vnímá pološero i když se v něm právě nenachází. Tam kde smrtelníkům běhám mráz po zádech, když prochází branami světů o kterých neví a ještě dlouho se o nich nedozví, vnímá nadpřirozené obrysy vrhané daleko z Pološera do světa smrtelníků a záři duše, jedné z hvězd na obloze pološera, vidí stejně jasně, jako ty co září přímo nad ním. Duše může stát přímo vedle vás a budete tušit jen přítomnost něčeho povědomého, jako dědečka, kterého jste nedávno ztratili, ale ten kdo v noci nespí a vyráží na lov bude jasně vědět že na něj z pološera nahlíží jeden z jeho nepřátel.
+              </p>
+              <h2> Supernaturálové </h2>
+              <p>
+              Supernaturálem se rozumí osoba, která se dokáže vrátit z Pološera, z astrálního světa kudy prochází duše zemřelých. Specificky v momentě, kdy má jedinec zajištěn způsob návratu, například označenou schránku do které se vrátí po své smrti, v případě některý lovců, nebo v případě že se již alespoň jednou vrátil, i u některých vzácných řádů, které si schránky předem neoznačují se dá mluvit o supernaturálech. Většinou si supernaturál nemůže označit schránku aniž by použil vrozenou magii. Obecně platí, že každá duše může posednout schránku ve hmotném světě, ale vyžaduje vrozenou schopnost, nebo mocnou magii aby duše vzala tělo trvale za své. Pouze v takovém případě se nejedná o posednutí (to může být krátkodobé, nebo dlouhodobé, ale většinou je brzy duše vytlačena, nebo tělo nesnese posedlost a začne chátrat, dokud není úplně zničeno). Mocná duše se může trvale vrátit do hmotného světa bez předem označené schránky po vynaložení enormního úsilí, není to však běžné a obvykle uběhnou hodiny, dny i léta, než se jí něco takového podaří. Pološero je místo nabité magií a platí v něm úplně jiné zákony než v našem světě. Zároveň si duše která se z Pološera vrátí, místo aby pokračovala do další roviny bití, nebo zůstala, zachovává svou energii a vzpomínky. Obojí se tak časem zvyšuje a dává supernaturálům moc dalece převyšující tu smrtelníků. Supernaturálem se někdo může narodit, jiný se jím může stát, dokud však splňuje tyto podmínky, je za něj označován.
+              </p>
+            </section>
+            
+            
+            <section class="wolf">
+              <h1> Vlkodlaci </h1>
+                <p>
+                Vlkodlak, je supernaturální stvoření na první pohled totožné s člověkem, je však schopné přeměny do animální podoby, ta se obvykle nejvíce podobá humanoidnímu vlku, nebo velkému psu.
+                </p>
+                <p>
+                Jiné než vlčí rysy jsou spíše způsobeny různící se délkou drápů a tesáků, nebo drobnými rozdíly v tvaru těla.
+                </p>
+                <h2> Chování </h2>
+                <p>
+                O konkrétní podobě Vlkodlaků se dá spekulovat, protože tito tvar měnící nadpřirození podléhají nepřirozeným záchvatům vzteku, predátorským pudům a obecně jsou neschopni koexistovat během přeměny s tvory jiných druhů a i mezi sebou vedou nekonečné teritoriální roztržky.
+                </p>
+                <h2> Moc </h2>
+                <p>
+                Během takovéto přeměny je vlkodlak jedním z nejmocnějších tvorů které člověk může potkat v našem světe a není si s nimi radno zahrávat. Kromě neuvěřitelné odolnosti a síly, disponují děsivými reflexy a smysly, rychlostí a obratností
+                </p>
+                <h2> Původ </h2>
+                <p>
+                Vlkodlaci jsou velice stará rasa. Jejich původ není znám, ale převládají dvě teorie, nebo spíše legendy. Jedna říká že když lidé sestoupili ze stromů a vyšli z lesů, jejich bratři vyšli za nimi, na okraj. Tam zůstali aby dohlíželi na civilizaci. Druhá legenda říká, že snad ve čtrnáctém století někde na Balkáně důsledkem užívání černé magie vznikly rasy upírů a vlkodlaků, aby soužily lidstvo.
+                </p>
+                <h2> Společnost </h2>
+                <p>
+                Vlkodlaci žijí ve smečkách. Jakýchsi kmenech, čítajících deset až padesát jedinců, které se přemisťují obvykle v generačních cyklech. Smečka se na jednom místě zastaví na tak dlouho, aby zplodila potomky a poté se obvykle přesune dál po své migrační trase. Většinou se pak smečka vrátí na totéž místo až když potomci dosáhnou dospělosti, tedy za deset až dvacet let kdy jsou již schopni přeměny.
+                </p>
+                <h2> Reinkarnace </h2>
+                <p>
+                K reinkarnaci se vlkodlak musí uchýlit po smrti přirozené, stejně jako po té nepřirozené. Vlkodlaci totiž mohou být v závislosti na konkrétním případě dlouhověcí, zpravidla však nejsou nesmrtelní. Lykantropové pak nejsou dlouhověcí ani když se ten kdo je stvořil dožívá dvou set let.
+                </p>
+                <p>
+                Vlkodlak během přeměny, může pokousat a nezabít smrtelníka, jde o instinkt podobný tomu rozmnožovacímu. V takovém případě se ze smrtelníka stane lykantrop. Lykantrop sdílí některé síly vlkodlaků, především dovednost projevit bestiální atributy, i když v menší míře než vlkodlak. Nepodléhají záchvatům vzteku, mohou být však mnohdy i nebezpečnější.
+                </p>
+                <p>
+                Nakonec je třeba zmínit, že jako všechny nižší rasy i lykantropové se po přeměně vždy mohou, podle síly své vůle, stát kompletně věrnými služebníky, až otroky svých stvořitelů, ale také si zachovat kompletně svobodnou vůli, nebo cokoliv mezi tím. Když jejich stvořitel zemře, jejich případná loajalita se zmateně vztahuje na všechny supernaturály daného druhu, dokud je nějaký jedinec nepřijme za své.
+                </p>
+            </section>
+            
+            
+            <section class="hunter">
+              <h1> Lovci </h1>
+              <p>
+              Lovci jsou lidé. Nebo jimi byli. Jejich hlavní odlišení, je přizpůsobenost nočnímu životu. V noci vycházejí hrůzy ven a lovec musí splynout s davem, aby kořist zastihl nepřipravenou. Musí být v noci jako doma, i když království lidí je pod paprsky slunce. Musí se z něj částečně stát to co loví. Na první pohled tedy nejsou, nebo se snaží nebýt odlišní od svých smrtelných bratří, ale přesto, občasná mutace nebo vylepšení může dát znát, že majitel nepřirozeně velkých očí, ten muž který chytil padající předmět příliš rychle, nebo žena, která sáhne na žhavý předmět bez popálenin nejsou tím, čím se na první pohled zdají být.
+              </p>
+              <h2> Chování </h2>
+              <p>
+              Lovci jsou obvykle disciplinovaní svatí válečníci zvyklí potlačovat emoce. Přemýšlejí nad sebou jako nad živoucí zbraní sloužící jedinému účelu. Jejich protipólem jsou ostřílení vojáci. Profesionálové kteří odvedou práci, ale neberou si servítky. V rámci řádu obvykle nalezneme hned několik těchto archetypů.
+              </p>
+              <h2> Moc </h2>
+              <p>
+              Lovec, je označení které se pro tuto odnož supernaturálů vžilo, přesto že zvláště v současnosti se jedná spíše o ochránce. Jsou to původem lidé i když někteří se již se svými schopnostmi narodili, to v případě že jsou jejich rodiči také Lovci. Tělesné atributy se dědí stejně jako u lidí, jen jde často o atributy mocnější. Zároveň disponují schopností navrátit se z Pološera jako ostatní supernaturálové, ale zpravidla nejsou silně nadaní nějakou magií, nebo schopností jako například vlkodlaci, téměř neporazitelní během své přeměny.
+              </p>
+              <h2> Původ </h2>
+              <p>
+              Demagogové mocného a prastarého vatikánského řádu tvrdí, že boj proti nadpřirozeným hrozbám podle hesla bojuj ohněm s ohněm, začal s počátky katolické církve. Pravdou však je že od té doby co lidské usedlosti začaly trpět útoky neviditelných, nepolapitelných a téměř neporazitelných hrůz, zrodila se myšlenka jak vytvořit bojovníka z řad lidí, který se jim bude moci postavit.
+              </p>
+              <h2> Společnost </h2>
+              <p>
+              Bytostem jež si řád zvolí se přezdívá patroni. Mezi patrony se obvykle řadí bytosti benevolentní nebo přinejmenším pasivní.
+              </p>
+              <p>
+              V současnosti se na věc nahlíží spíše pragmaticky, přesto se však najde mnoho věřících, ačkoliv mnohem méně těch fanatických, plně se oddávajících do rukou božstev.
+              </p>
+              <h2> Reinkarnace </h2>
+              <p>
+              Stejně, jako se člověk stane supernaturálem, když je na něj aplikovaná magie pro zachování duše (nebo když se s ní v okrajovém případě narodí), Může se člověk stát takzvaným adeptem když je magií označen, jako schránka. Může jít o proceduru s jediným efektem, ale také může adepta posílit, ať už magicky, nebo být doprovázena například pitím lektvarů, které dosáhnou podobného efektu za použití méně magických, nebo nemagických prostředků.
+              </p>
+              <p>
+              Nakonec je třeba zmínit, že jako všechny “nižší” rasy i adepti se po přeměně vždy mohou, podle síly své vůle a typu použité magie, stát kompletně věrnými služebníky, až otroky svých stvořitelů, ale také si zachovat kompletně svobodnou vůli, nebo cokoliv mezi tím. Když jejich stvořitel zemře, jejich případná loajalita se zmateně vztahuje na všechny supernaturály daného druhu, dokud je nějaký jedinec nepřijme za své.
+              </p>
+            </section>
+            
+            
+            <section class="vamp">
+              <h1> Upíři </h1>
+              <p>
+              Upír je veskrze temné stvoření, sající životní sílu z jiného živého tvora. Fyziologie upíra, je zásadně odlišná od té smrtelnické, a dokonce i od ostatních supernaturálů. Nejeví některé základní známky života a přes svůj veskrze lidský vzhled nepotřebují k životu běžné podmínky  jako dýchat kyslík, nebo spát. Zvláštností je že všichni upíři mají výraznější špičáky než ostatní rasy. Ty jsou zvláště výrazné když se chystají krmit. Upír je přirozeně odlišný od smrtelníků, ale stejně jako se vším nadpřirozeným i zcela přirozené projevy života jako tělesné teplo je možné navodit s využitím krve v organismu upíra.
+              </p>
+              <h2> Chování </h2>
+              <p>
+              Obvykle se život upírů točí kolem krve. Když ji vysají z živého tvora, udrží svou nepřirozenou existenci. Když jí nakrmí živého člověka, stane se s něj jejich služebník a potenciální schránka pro reinkarnaci. Když jejich krev steče do hrdla člověka čerstvě vysátého, je stvořen nový upír.
+              </p>
+              <p>
+              Běžné radosti života se týkají i upírů, ale blednou v porovnání s požitkem z krmení. Spíše než o spánku se dá u upírů mluvit o krátkodobé hibernaci. Upír se obvykle přes den prostě zastaví a obnoví činnost až večer.
+              </p>
+              <h2> Moc </h2>
+              <p>
+              Mezi typické schopnosti upírů patří manipulace s vědomím oběti, levitaci či přeměna, spolu s obecně nadlidskými výkony které vyvolávají když spálí množství krve.
+              </p>
+              <h2> Původ </h2>
+              <p>
+              Jako jedna z teorií o jejich vzniku se udává legenda sdílená s vlkodlaky. Jde o příběh ze středověké transylvánie pojednávající o temné magii a stvoření služebníka temnot, ultimátní metlu lidstva. Druhá teorie je tajemná legenda ústně předávaná mezi samotnými upíry. Tato legenda říká, že upíři jsou nejstarší inteligentní rasa, podle některých jediná inteligentní rasa, která kdy na světě existovala a pochází z města zvaného Lshrasa. Slavného místa, které mělo věže až do nebes dříve, než člověk vyšel z první jeskyně. Temného místa, kde denní obživou byly životy jiných a denní zábavou jejich utrpení.
+              </p>
+              <h2> Společnost </h2>
+              <p>
+              Společnost skutečných nesmrtelných je snad ta nejspletitější ze všech. Klan, národnost, všelijaké kliky a zájmové skupiny či frakce mají věčnost na to se přetahovat o dominanci a soutěžit mezi sebou snad v každé představitelné disciplíně.
+              </p>
+              <h2> Reinkarnace </h2>
+              <p>
+              Nižší rasou navázanou na upírskou rasu jsou ghúlové, lidé se kterými upíři sdíleli svou sílu. Jakkoliv udržuje upír svou existenci, může stejně tuto sílu předat smrtelníkovi. Takový smrtelník se na této síle stává čím dál více psychicky a fyzicky závislý. Získává také sílu ne nepodobnou té, kterou disponuje dárce.
+              </p>
+              <p>
+              Tento stav sice dělá z nositele otroka a způsobuje částečné nebo úplné převzetí upírových vlastností, ale navzdory tomu, ghúl pořád může žít relativně normální život běžného člověka a přitom požívat výhod dlouhověkosti, nadlidské síly a často dalších schopností. Hlavní nevýhodou je že tělo ghúla propadá upírovi, který jej kdykoliv může potřebovat využít k převtělení, ale jako jediná nižší rasa mají ghůlové velkou šanci stát se něčím víc. Mají šanci stát se upíry a zpravidla větší než obyčejný smrtelník.
+              </p>
+              <p>
+              Dokud upír nevyhladoví, nestárne. Dokum má ghůl v těle sílu svého pána také nestárne.
+              </p>
+            </section>
             
         </main>
         <footer>
