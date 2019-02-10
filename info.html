@@ -22,13 +22,15 @@
               main > #wolf:not(:checked) ~ .wolf,
               main > #hunter:not(:checked) ~ .hunter,
               main > #vamp:not(:checked) ~ .vamp,
+              main > #factions:not(:checked) ~ .factions,
               main > input[type=radio] { display: none; }
               main > #general:checked ~ nav > [for=general],
               main > #polosero:checked ~ nav > [for=polosero],
               main > #super:checked ~ nav > [for=super],
               main > #wolf:checked ~ nav > [for=wolf],
               main > #hunter:checked ~ nav > [for=hunter],
-              main > #vamp:checked ~ nav > [for=vamp]
+              main > #vamp:checked ~ nav > [for=vamp],
+              main > #factions:checked ~ nav > [for=factions]
               { color: red; }
               main > section { margin-top: 0 !important; }
               main > nav { padding: 0; }
@@ -65,6 +67,7 @@
             <input id="wolf" type="radio" name="info-nav" />
             <input id="hunter" type="radio" name="info-nav" />
             <input id="vamp" type="radio" name="info-nav" />
+            <input id="factions" type="radio" name="info-nav" />
             <nav>
               <label for="general"> Obecné </label>
               <label for="polosero"> Pološero </label>
@@ -72,6 +75,7 @@
               <label for="wolf"> Vlkodlaci </label>
               <label for="hunter"> Lovci </label>
               <label for="vamp"> Upíři </label>
+              <label for="factions"> Frakce </label>
             </nav>
             
             
@@ -307,6 +311,73 @@
               <p>
               Dokud upír nevyhladoví, nestárne. Dokum má ghůl v těle sílu svého pána také nestárne.
               </p>
+            </section>
+            
+            
+            <section class="factions">
+              <h1> Frakce </h1>
+              <dl class="thic">
+                <dt> Pořádkové složky </dt>
+                <dd>
+                  Policie města Olomouc udržuje pořádek ve městě a chrání jeho občany před
+                  hrozbami přirozenými i nadpřirozenými.
+                </dd>
+                <dd><i>
+                  Příslušníci pořádkových složek si netvoří vlastní postavu, jejich účelem
+                  je zcela vymýtit zločin v Olomouci. V průběhu hry mohou vystřídat více
+                  postav. Jejich hra se nebude zaměřovat na jednotlivé postavy a jejich
+                  příběhy, ale na strategii a udržování pořádku.
+                </i></dd>
+                <dt> Podsvětí </dt>
+                <dd>
+                  Překupníci kradených aut, vrahové a vyděrači, výrobci drog, dealeři
+                  a všemožné další kriminální živly které si dovedete představit.
+                </dd>
+                <dd><i>
+                  Příslušníci podsvětí si netvoří vlastní postavu, jejich účelem je
+                  rozšířit své podnikání. V průběhu hry mohou
+                  vystřídat více postav. Jejich hra se nebude zaměřovat na jednotlivé
+                  postavy a jejich příběhy, ale na strategii a kriminální činnost.
+                </i></dd>
+                <dt> Samotář - cestovatel </dt>
+                <dd>
+                  Nepatří do žádné frakce, kultu ani řádu. Za svůj život procestoval
+                  nespočet koutů světa, posbíral spoustu informací a vytvořil spoustu
+                  kontaktů. Není nikde zdejší, ale všude byl.
+                </dd>
+                <dd><i>
+                  Samotář může být libovolné rasy a vyznání.
+                </i></dd>
+                <dt> Samotář - místní </dt>
+                <dd>
+                  Nepatří do žádné frakce, kultu ani řádu. Žije v Olomouci a má přehled
+                  o městě a jeho okolí.
+                </dd>
+                <dd><i>
+                  Samotář může být libovolné rasy a vyznání.
+                </i></dd>
+                <dt> Vatikánský řád </dt>
+                <dd>
+                  Prastarý řád lovců, římskokatolického vyznání.
+                  Nejvýznamnější lovecký řád.
+                  Přes rozdíly víry spolupracují s ostatnímy řády.
+                </dd>
+                <dt> Svengali </dt>
+                <dd>
+                  Klan upírů, který byl schopen se integrovat do lidské společnosti.
+                  Zástupce toho klanu najdeme po celém světě, žijí mezi nic netušícími
+                  smrtelníky.
+                </dd>
+                <dt> Moravská smečka </dt>
+                <dd>
+                  Místní smečka vlkodlaků, která krouží po Moravě.
+                  Nyní táboří někde v okolí Olomouce.
+                </dd>
+                <dt> Chci frakci </dt>
+                <dd><i>
+                  Možnost pro ty, kteří chtějí vlastní frakci. Kontaktujte nás na e-mail.
+                </i></dd>
+              </dl>
             </section>
             
         </main>
