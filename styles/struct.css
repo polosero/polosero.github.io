@@ -101,14 +101,18 @@ ul.big > li {
 @media only screen and (max-width: 36em) {
     label[for=menu-burger] {
         display: block;
+        color: transparent;
         position: absolute;
         right: 0;
         padding: 0.2rem;
         cursor: pointer;
-        height: 4rem;
-        width: 4rem;
+        height: 2.1rem;
+        width: 2.1rem;
+        margin: 1.0rem 1rem;
         background-image: url('/menu.png');
+        background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
     }
     body > nav {
         flex-direction: column;
