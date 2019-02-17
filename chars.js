@@ -11,6 +11,7 @@ window.addEventListener('load', function() {
                 <span class="user">${e(char.nick)}</span>
                 <span class="race">${e(char.race)}</span>
             </li>`;
+        }
     }).catch(console.error);
 });
 
