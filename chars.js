@@ -5,6 +5,7 @@ window.addEventListener('load', function() {
     ).then(response => {
         const list = document.getElementById('char-list');
         for (const char of response)
+            if (char.id === 1) continue;  // NOTE: Testovič je undercover
             list.innerHTML += `<li>
                 <span class="char">${e(char.name)}</span>
                 <span class="user">${e(char.nick)}</span>
