@@ -12,6 +12,27 @@
             <meta property="og:url" content="https://polo-sero.cz/info.html" />
             <meta property="og:image" content="https://polo-sero.cz/img/logo.jpg" />
             <meta property="og:description" content="Registrace je spuštěna." />
+            <script src="/chars.js"></script>
+            <style media="screen">
+              ul#char-list {
+                max-width: 40rem;
+                margin: auto;
+                list-style: none;
+                padding: 0; }
+              ul#char-list > li { display: flex; }
+              ul#char-list > li > span {
+                flex: 2;
+                border: 1px solid dimgray;
+                padding: 0.1rem 0.2rem; }
+              ul#char-list > li > .char { flex: 3; }
+              ul#char-list:not(:empty)::before {
+                content: "Registrované postavy";
+                font-size: 1.1rem;
+                margin-top: 2rem;
+                margin-bottom: 0.5rem;
+                display: block;
+                font-weight: bold; }
+            </style>
     </head>
     <body>
         <label for="menu-burger"> menu </label>
@@ -83,6 +104,8 @@
                   Nutné auto, řidičský průkaz a zodpovědnost (bude ve hře řídit reálné auto).
                 </i></dd>
               </dl>
+            
+              <ul id="char-list"></ul>
         </main>
         <footer>
             Na stránkách se aktivně pracuje.
