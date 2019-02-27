@@ -1,4 +1,17 @@
-window.addEventListener('load', function() {
+function loadEffects() {
+    XHR('GET', '/pub/effects').then(response => {
+        const list = document.getElementById('effect-list');
+        for (const effect of response) {
+            list.innerHTML += `
+                <dt>${effect.name}</dt>
+                <dd>${effect.description}</dd>
+            `;
+        }
+    }).catch(console.error);
+}
+
+
+function loadChars() {
     XHR(
         'GET',
         '/pub/chars'
@@ -13,8 +26,7 @@ window.addEventListener('load', function() {
             </li>`;
         }
     }).catch(console.error);
-});
-
+}
 
 const URL_BASE = 'https://polosero.pythonanywhere.com';
 function XHR(method, endpoint) {

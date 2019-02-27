@@ -12,25 +12,19 @@
             <meta property="og:url" content="https://polo-sero.cz/mechanics.html" />
             <meta property="og:image" content="https://polo-sero.cz/img/logo.jpg" />
             <meta property="og:description" content="" />
+            <script src="/scripts.js"></script>
+            <script type="text/javascript">
+              window.addEventListener('load', loadEffects);
+            </script>
             <style media="screen">
               main > nav { justify-content: flex-start; }
               main > nav > label { padding: 0.2rem 0.5rem; font-weight: bold; cursor: pointer; }
               main > section > article { margin-top: 1rem; }
               main > #general:not(:checked) ~ .general,
-              main > #polosero:not(:checked) ~ .polosero,
-              main > #super:not(:checked) ~ .super,
-              main > #wolf:not(:checked) ~ .wolf,
-              main > #hunter:not(:checked) ~ .hunter,
-              main > #vamp:not(:checked) ~ .vamp,
-              main > #factions:not(:checked) ~ .factions,
+              main > #effects:not(:checked) ~ .effects,
               main > input[type=radio] { display: none; }
               main > #general:checked ~ nav > [for=general],
-              main > #polosero:checked ~ nav > [for=polosero],
-              main > #super:checked ~ nav > [for=super],
-              main > #wolf:checked ~ nav > [for=wolf],
-              main > #hunter:checked ~ nav > [for=hunter],
-              main > #vamp:checked ~ nav > [for=vamp],
-              main > #factions:checked ~ nav > [for=factions]
+              main > #effects:checked ~ nav > [for=effects]
               { color: red; }
               main > section { margin-top: 0 !important; }
               main > nav { padding: 0; }
@@ -63,19 +57,10 @@
         </header>
         <main>
             <input id="general" type="radio" name="info-nav" checked />
-            <!-- <input id="polosero" type="radio" name="info-nav" />
-            <input id="super" type="radio" name="info-nav" />
-            <input id="wolf" type="radio" name="info-nav" />
-            <input id="hunter" type="radio" name="info-nav" />
-            <input id="vamp" type="radio" name="info-nav" />
-            <input id="factions" type="radio" name="info-nav" /> -->
+            <input id="effects" type="radio" name="info-nav" />
             <nav>
               <label for="general"> Obecné </label>
-              <!-- <label for="polosero"> Pološero </label>
-              <label for="wolf"> Vlkodlaci </label>
-              <label for="hunter"> Lovci </label>
-              <label for="vamp"> Upíři </label>
-              <label for="factions"> Frakce </label> -->
+              <label for="effects"> Efekty </label>
             </nav>
             
             
@@ -85,11 +70,12 @@
               </p>
             
               <ul>
-              <li> <strong>Hlavní pravidlo</strong> které je třeba mít vždy na paměti je <strong>zdravý rozum</strong>. </li>
-              <li> Že si hráči nemají navzájem reálně ublížit vychází z <strong>platných zákonů</strong>. </li>
-              <li> Že má boj být <strong>spravedlivý</strong> a má <strong>vypadat dobře</strong> je zase něco co by mělo být samozřejmé. </li>
-              <li> Rozměry zbraní jsou omezeny pouze <strong>bezpečností</strong> a <strong>hlavním pravidlem</strong>. </li>
-              <li> Povolené střelné zbraně jsou: NERF, luky, kuše a vrhací. </li>
+              <li> <strong>Hlavní pravidlo</strong> které je třeba mít vždy na paměti je <strong>zdravý rozum</strong>.
+              <li> Že si hráči nemají navzájem reálně ublížit vychází z <strong>platných zákonů</strong>.
+              <li> Že má boj být <strong>spravedlivý</strong> a má <strong>vypadat dobře</strong> je zase něco co by mělo být samozřejmé.
+              <li> Rozměry zbraní jsou omezeny pouze <strong>bezpečností</strong> a <strong>hlavním pravidlem</strong>.
+              <li> Povolené střelné zbraně jsou: NERF, luky, kuše a vrhací.
+              <li> Boj je možný i holýma rukama.
               </ul>
             
               <h2> Schopnosti </h2>
@@ -103,14 +89,48 @@
               </p>
             
               <h2> Boj </h2>
+              <p class="quote">
+              Schopnosti i kouzla je možné využít ke zranění a zabití jiné postavy. Ve výjimečných případech je možné nepřítele zabít nebo zranit bez použití jakéhokoliv média, a nebo způsobit zvláštní efekt. Obvykle však schopnosti nebo kouzla vytvoří nějakou energii, nebo jev, který pak v důsledku nepřítele zraní. Například vyvolá oheň nebo zvýší sílu postavy
+              </p>
               <p>
-              Schopnosti i kouzla je možné využít ke zranění a zabití jiné postavy. Ve výjimečných případech je možné nepřítele zabít nebo zranit bez použití jakéhokoliv média, a nebo způsobit zvláštní efekt. Obvykle však schopnosti nebo kouzla vytvoří nějakou energii, nebo jev, který pak v důsledku nepřítele zraní. Například vyvolá oheň nebo zvýší sílu postavy.
+              Boj je možný za použití holých rukou, zbraní, nosičů, i pouhým pohledem.
+              </p>
+              <p>
+              Útoky způsobují oběti zranění. Zraněná končetina je vyřazena do doby, než je navrácena do původního stavu. Dvakrát zraněná končetina způsobí oběti šok. Tak vážně zranění vyřadí postavu z boje. Jedno zranění trupu postavu příliš neomezí, pokud však boj skončí a adrenalin vyprchá, toto zranění postavu okamžitě vyřazuje. Dvě zranění trupu pak vyřadí bojovníka i v boji okamžitě.
+              </p>
+            
+              <h2>Zranění</h2>
+              <p>
+              Prvním pravidlem je vždy hrát úměrně utrženým zraněním na základě toho kam byla zasazena,
+              jak hluboká či mělká byla.
+              <strong>Zranění</strong> i <strong>vyřazení</strong> je stav, který se na hráče aplikuje dokud není odstraněn,
+              ošetřením je však možné zmírnit projevy bolesti, zastavit krvácení a koupit si tak čas,
+              nebo zamezit dalšímu šoku z otevřené rány.
+              Pokud není řečeno jinak, péče o zraněné místo zranění neléčí.
+              Vyřazení postavy je vázané na utržená zranění takže i jeho projevy lze zmírnit,
+              dokud není hráč vyléčen ale není odstraněno.
+              Dokud <strong>zranění</strong> trvá, končetiny není možné vůbec použít k boji
+              a je téměř nemožné je využít pro běžné činnosti. Dokud trvá <strong>vyřazení</strong>,
+              není pro postavu vůbec možné bojovat a je téměř nemožné vykonávat ostatní činnosti.
+              </p>
+            
+              <h2>Akce</h2>
+              <p>
+              Boj se skládá z akcí. Jedná se o časovou jednotku dlouhou zhruba vteřinu nebo dvě. Jde o dobu trvání každé jedné činnosti v boji. Každý efekt trvá právě jednu akci.
               </p>
             
               <h2> Předměty </h2>
               <p>
               Stejně jako proti hráči je možné využít kouzla i schopnosti k zničení či úpravě předmětu. Typicky obojí předět zničí pomocí vytvoření extrémních podmínek jako žár či chlad nebo vyvinutím fyzické síly. Ve vzácných případech je možné předmět teleportovat jinam, úplně jej odstranit z existence, nebo jej například očarovat či proklít.
               </p>
+            </section>
+            
+            <section class="effects">
+              <noscript>
+                <p><strong>Výpis efektů vyžaduje zapnutý javascript.</strong></p>
+              </noscript>
+              <dl id="effect-list" class="thic">
+              </dl>
             </section>
             
             
