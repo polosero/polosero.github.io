@@ -1,0 +1,166 @@
+html {
+    background-color: black;
+    color: #ddd;
+    font-family: sans-serif;
+}
+
+
+nav {
+    background-color: black;
+}
+nav > a, .menu-item {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+nav > a.selected {
+    text-decoration: none;
+    color: red;
+}
+
+
+main {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    color: gray;
+}
+
+section:not(:first-child) {
+    border-top: 1px solid #222;
+    margin-top: 3rem;
+}
+
+html {
+    background-attachment: fixed;
+    background-image:
+        repeating-radial-gradient(
+            #222,
+            #000 1px,
+            transparent 3px
+        );
+    background-size: 70px 70px;
+}
+
+a {
+    color: white;
+}
+a.icon {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+header > h1 + p {
+    text-align: center;
+}
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.1rem; }
+
+
+dl.thic > dt {
+    font-weight: bold;
+}
+.contacts {
+    text-align: center;
+}
+dl.contacts > dt:first-child {
+    margin-top: 0;
+}
+dl.contacts > dt {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 2rem 0 0.4rem;
+}
+dl.contacts > dd {
+    margin: 0;
+}
+dl.contacts > dt.orgs {
+    margin-bottom: 0.4rem;
+}
+dl.contacts > dt.orgs ~ dd > p {
+    margin: 0 0 0.4rem;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.quote {
+    border-left: 3px solid #222;
+    padding-left: 1em;
+    margin-left: 0.5em;
+    color: gray;
+}
+.note {
+    color: gray;
+}
+.meta-info {
+    font-size: 0.9rem;
+    color: gray;
+}
+.meta-info > a {
+    color: silver;
+}
+.meta-info > time,
+time.meta-info {
+    text-align: right;
+    float: right;
+}
+
+article p {
+    margin: 0.2rem 0;
+}
+article p:first-letter {
+    padding-left: 1rem;
+}
+
+
+input, button, select {
+    background-color: black;
+    color: #eee;
+    border-width: 0;
+    border-bottom: 1px solid #eee;
+}
+label {
+    font-size: 0.9rem;
+    background-color: black;
+    color: #ddd;
+}
+button {
+    border-width: 2px;
+    display: inline-flex;
+    flex-direction: column;
+}
+button > span {
+    font-size: 0.8em;
+    color: gray;
+}
+button:hover {
+    background-color: #222;
+}
+input:focus {
+    color: white;
+    box-shadow: 0 2px #eee;
+}
+input:disabled, select:disabled {
+    border-color: black
+}
+select:disabled {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+fieldset {
+    background-color: black;
+    border: 1px solid dimgray;
+}
